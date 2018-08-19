@@ -25,7 +25,7 @@ class QueryBuilder {
         qs += this.arrayJustify(colepar);
         qs += " WHERE " + id + " = " + val;
         return qs;
-    };
+    };Users/Public/Glary Utilities/
     arrayJustify(obj) {
         //TODO: Implement Me
         var qs = '';
