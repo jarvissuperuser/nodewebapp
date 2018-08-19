@@ -7,7 +7,6 @@ class QueryBuilder {
         this.results = [];
     }
     select(selection, table, lim) {
-        //TODO: Implement Me
         var qs = "SELECT ";
         qs += this.arrayJustify(selection);
         qs += " FROM ";
@@ -20,14 +19,12 @@ class QueryBuilder {
 
     };
     update(table, colepar, id, val) {
-        //TODO: Implement Me
         var qs = "UPDATE " + table + ' SET ';
         qs += this.arrayJustify(colepar);
         qs += " WHERE " + id + " = " + val;
         return qs;
-    };Users/Public/Glary Utilities/
+    };
     arrayJustify(obj) {
-        //TODO: Implement Me
         var qs = '';
         if (obj !== undefined) {
             if (!obj.hasOwnProperty("substr"))
@@ -44,8 +41,6 @@ class QueryBuilder {
     };
 
     insert(tble, cols, vals) {
-        //TODO: Implement Me --dangerous
-        //console.log('datas',cols,vals);
         var qs = "INSERT or REPLACE INTO ";
         qs += tble + "(";
         qs += this.arrayJustify(cols);
@@ -158,7 +153,7 @@ class QueryBuilder {
 	async readyDBTables(){
 		let qrySQL = readSQL("db.sql");
 		let result = multipleQuery(qrySQL);
-		console.log(result);
+		console.log(result)
 	}
 	
 }
