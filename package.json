@@ -1,0 +1,25 @@
+{
+  "name": "work",
+  "version": "0.0.1",
+  "description": "source for a quick web platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarvissuperuser/nodewebapp.git"
+  },
+  "keywords": [
+    "node",
+    "webapp",
+    "express",
+    "mysql"
+  ],
+  "author": "Timothy Mugadza",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jarvissuperuser/nodewebapp/issues"
+  },
+  "homepage": "https://github.com/jarvissuperuser/nodewebapp#readme"
+}
